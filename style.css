@@ -41,7 +41,7 @@ a{
 }
 a::after{
   content: '';
-  background-color: white;
+  background-color: white ;
   height: 1px;
   width: 100%;
   position: absolute;
@@ -76,67 +76,38 @@ a:hover::after{
   color: #777;
 }
 
-.box1{
-  color: black;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: pink;
-  border-radius: 20px;
-   border: 1px solid gray;
-}
-.box2{
-  color: black;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: gray;
-  border-radius: 20px;
-   border: 1px solid gray;
-}
-.box3{
-  color: black;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: purple;
-  border-radius: 20px;
-   border: 1px solid gray;
-}
-.box4{
-  color: black;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: yellow;
-  border-radius: 20px;
-   border: 1px solid gray;
-}
-.box5{
-  color: black;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: orangered;
-  border-radius: 20px;
-  border: 1px solid gray;
-}
-.box6{
-  color: black;
-  height: 200px;
-  width: 200px;
-  padding: 20px;
-  background-color: blue;
-  border-radius: 20px;
-  border: 1px solid gray;
-}
-
-.box{
+.allbox{
   display: flex;
-  margin-left: 10px;
-  padding: 20px;
   justify-content: center;
   align-items: center;
-  gap: 1em;
+  color: white;
+  height: 200px;
+  width: 200px;
+  margin-top: 0;
+  padding: 30px;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid gray;
+  
+}
+.box{
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2em;
   box-shadow: gray;
+}
+allbox:visited {
+  border: 1px solid white;
+}
+.allbox:hover {
+  border: 1px solid orangered; 
+}
+.allbox:active {
+  border: 1px solid white; 
 }
