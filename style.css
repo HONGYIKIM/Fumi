@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===========================
    RESET & BASE STYLES
 =========================== */
@@ -552,4 +553,118 @@ ul {
     border-top: 1px solid #1e1e1e;
     font-size: 13px;
     color: #555;
+=======
+body{
+    background-color: black;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+   
+}
+.logo{
+    color: orangered;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    
+}
+.menu a {
+    font-size: 25px;
+    justify-content: space-between;
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: orangered; 
+}
+a:active {
+  color: white; 
+}
+a{
+  position: relative;
+}
+a::after{
+  content: '';
+  background-color: white ;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  scale: 0;
+  transition: scale 200ms ease;
+}
+a:hover::after{
+  scale: 1;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background: black;
+  border-radius: 40px;
+  padding: 2px;
+  height: 30px;
+  width: 300px;
+  border: 1px solid #2a2a2a;
+}
+.search-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ccc;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+.search-container input::placeholder {
+  color: #777;
+}
+
+.allbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 200px;
+  width: 200px;
+  margin-top: 0;
+  padding: 30px;
+  background-color: black;
+  border-radius: 20px;
+  border: 1px solid gray;
+  
+}
+.box{
+  position: relative;
+  display: flex;
+  margin-left: 10px;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 2em;
+  box-shadow: gray;
+}
+allbox:visited {
+  border: 1px solid white;
+}
+.allbox:hover {
+  border: 1px solid orangered; 
+}
+.allbox:active {
+  border: 1px solid white; 
+>>>>>>> df3b5b138002b5989941cb8c110f7c8371a33c94
 }
